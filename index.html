@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Loading Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="imgs/logos/save-point.svg" alt="" id="mainLogoLoad">
+
+        <!------------------------------------------------------------------------->
+
+        <!--LOADING PAGE-->
+        <div class="child" id="loadingPage">
+            <p class="indicatorLbl">Login</p>
+            <img src="imgs/logos/save-point.svg" alt="" id="mainLogo">
+
+            <form id="firstLoginForm">
+                <div class="inputcontainer">
+                    <div class="inputbox">
+                        <label for="inputTable">Mesa:</label>
+                        <input type="number" placeholder="00" id="inputTable" maxlength="2">
+                    </div>
+
+                    <div class="inputbox">
+                        <label for="inputPhone">Telefone:</label>
+                        <input type="number" placeholder="(00)90000-0000" id="inputPhone" maxlength="11">
+                    </div>
+                </div>
+
+                <div class="inputbox">
+                    <label for="inputName">Nome:</label>
+                    <input type="text" placeholder="digite seu nome" id="inputName" maxlength="32">
+                </div>
+            </form>
+
+            <p class="msgHelp">Para acessar, insira seus dados</p>
+
+            <div id="buttonLogin">
+                <img src="imgs/icons/invader1.svg" alt="">
+                <p id="buttonLoginText">PRESS TO START</p>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------------->
+        <!--MENU PAGE-->
+
+        <!--DEFAULT-->
+        <div class="child" id="menuPage">
+            <header>
+                <h3 id="nameClient">Olá, </h3>
+
+                <div class="tableIndicator">
+                    <p>Mesa:</p>
+                    <div id="tableNumber">
+                        <p>12</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="menuChild">
+                <h3>Cozinhas</h3>
+
+                <nav>
+                    <div class="sliderBox">
+                        <div class="sliderItem">
+                            <div class="sliderProd" id="btnBurgers">
+                                <img src="imgs/sprites/burger.svg" alt="">
+                                <p>Hambúrguer</p>
+                            </div>
+                        </div>
+    
+                        <div class="sliderItem">
+                            <div class="sliderProd" id="btnPortions">
+                                <img src="imgs/sprites/fries.svg" alt="">
+                                <p>Porções</p>
+                            </div>
+                        </div>
+    
+                        <div class="sliderItem">
+                            <div class="sliderProd" id="btnDessert">
+                                <img src="imgs/sprites/dessert.svg" alt="">
+                                <p>Sobremesas</p>
+                            </div>
+                        </div>
+    
+                        <div class="sliderItem">
+                            <div class="sliderProd" id="btnDrinks">
+                                <img src="imgs/sprites/drink.svg" alt="">
+                                <p>Bebidas</p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+    
+                <h3>Destaques</h3>
+    
+                <div class="carouselBox">
+                    
+                </div>
+            </div>
+            <!--DEFAULT END-->
+            
+
+            <!--BURGERS-->
+            <div class="menuChild">
+
+            </div>
+            <!--BURGERS END-->
+            
+            <footer>
+                <div class="footerNavItem">
+                    <img src="imgs/icons/navigation/home.svg" alt="">
+                    <p>Início</p>
+                </div>
+
+                <div class="footerNavItem">
+                    <img src="imgs/icons/navigation/history.svg" alt="">
+                    <p>Pedidos</p>
+                </div>
+
+                <div class="footerNavItem">
+                    <img src="imgs/icons/navigation/cart.svg" alt="">
+                    <p>Carrinho</p>
+                </div>
+            </footer>
+        </div>
+        <!------------------------------------------------------------------------->
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
